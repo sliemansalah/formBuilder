@@ -33,7 +33,9 @@
 import Vue from 'vue';
 import Input from '../FormElements/Input';
 import EInput from '../FormElements/EInput';
-import Etextarea from '../FormElements/Etextarea';
+import ETextarea from '../FormElements/ETextarea';
+import ECheckbox from '../FormElements/ECheckbox';
+import ERadio from '../FormElements/ERadio';
 
 import Checkbox from '../FormElements/Checkbox';
 import RadioButton from '../FormElements/RadioButton';
@@ -55,7 +57,9 @@ export default {
     },
     components:{
         EInput,
-        Etextarea,
+        ETextarea,
+        ECheckbox,
+        ERadio,
         Input,
         Checkbox,
         RadioButton

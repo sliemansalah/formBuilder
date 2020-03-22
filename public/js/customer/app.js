@@ -1927,6 +1927,34 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ECheckbox.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/FormElements/ECheckbox.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      model: false
+    };
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/EInput.vue?vue&type=script&lang=js&":
 /*!************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/FormElements/EInput.vue?vue&type=script&lang=js& ***!
@@ -1963,9 +1991,45 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/Etextarea.vue?vue&type=script&lang=js&":
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ERadio.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/FormElements/ERadio.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['name', 'params'],
+  data: function data() {
+    return {
+      radio: ''
+    };
+  },
+  computed: {
+    options: function options() {
+      return this.params.options;
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ETextarea.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/FormElements/Etextarea.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/FormElements/ETextarea.vue?vue&type=script&lang=js& ***!
   \***************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2326,9 +2390,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _FormElements_Input__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../FormElements/Input */ "./resources/js/admin/components/FormElements/Input.vue");
 /* harmony import */ var _FormElements_EInput__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../FormElements/EInput */ "./resources/js/admin/components/FormElements/EInput.vue");
-/* harmony import */ var _FormElements_Etextarea__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../FormElements/Etextarea */ "./resources/js/admin/components/FormElements/Etextarea.vue");
-/* harmony import */ var _FormElements_Checkbox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../FormElements/Checkbox */ "./resources/js/admin/components/FormElements/Checkbox.vue");
-/* harmony import */ var _FormElements_RadioButton__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../FormElements/RadioButton */ "./resources/js/admin/components/FormElements/RadioButton.vue");
+/* harmony import */ var _FormElements_ETextarea__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../FormElements/ETextarea */ "./resources/js/admin/components/FormElements/ETextarea.vue");
+/* harmony import */ var _FormElements_ECheckbox__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../FormElements/ECheckbox */ "./resources/js/admin/components/FormElements/ECheckbox.vue");
+/* harmony import */ var _FormElements_ERadio__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../FormElements/ERadio */ "./resources/js/admin/components/FormElements/ERadio.vue");
+/* harmony import */ var _FormElements_Checkbox__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../FormElements/Checkbox */ "./resources/js/admin/components/FormElements/Checkbox.vue");
+/* harmony import */ var _FormElements_RadioButton__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../FormElements/RadioButton */ "./resources/js/admin/components/FormElements/RadioButton.vue");
 //
 //
 //
@@ -2360,6 +2426,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+
+
 
 
 
@@ -2383,10 +2451,12 @@ __webpack_require__.r(__webpack_exports__);
   },
   components: {
     EInput: _FormElements_EInput__WEBPACK_IMPORTED_MODULE_2__["default"],
-    Etextarea: _FormElements_Etextarea__WEBPACK_IMPORTED_MODULE_3__["default"],
+    ETextarea: _FormElements_ETextarea__WEBPACK_IMPORTED_MODULE_3__["default"],
+    ECheckbox: _FormElements_ECheckbox__WEBPACK_IMPORTED_MODULE_4__["default"],
+    ERadio: _FormElements_ERadio__WEBPACK_IMPORTED_MODULE_5__["default"],
     Input: _FormElements_Input__WEBPACK_IMPORTED_MODULE_1__["default"],
-    Checkbox: _FormElements_Checkbox__WEBPACK_IMPORTED_MODULE_4__["default"],
-    RadioButton: _FormElements_RadioButton__WEBPACK_IMPORTED_MODULE_5__["default"]
+    Checkbox: _FormElements_Checkbox__WEBPACK_IMPORTED_MODULE_6__["default"],
+    RadioButton: _FormElements_RadioButton__WEBPACK_IMPORTED_MODULE_7__["default"]
   },
   created: function created() {
     var _this = this;
@@ -30144,6 +30214,53 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ECheckbox.vue?vue&type=template&id=483bdbdf&":
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/FormElements/ECheckbox.vue?vue&type=template&id=483bdbdf& ***!
+  \*******************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c(
+        "el-checkbox",
+        {
+          on: {
+            input: function($event) {
+              return _vm.$emit("input", _vm.model)
+            }
+          },
+          model: {
+            value: _vm.model,
+            callback: function($$v) {
+              _vm.model = $$v
+            },
+            expression: "model"
+          }
+        },
+        [_vm._v(_vm._s(_vm.model))]
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/EInput.vue?vue&type=template&id=54fe6cde&":
 /*!****************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/FormElements/EInput.vue?vue&type=template&id=54fe6cde& ***!
@@ -30195,9 +30312,64 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/Etextarea.vue?vue&type=template&id=29d08fb6&":
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ERadio.vue?vue&type=template&id=9528aee2&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/FormElements/ERadio.vue?vue&type=template&id=9528aee2& ***!
+  \****************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    _vm._l(_vm.options, function(option, key) {
+      return _c(
+        "label",
+        { key: key },
+        [
+          _c(
+            "el-radio",
+            {
+              attrs: { label: option.value },
+              on: {
+                input: function($event) {
+                  return _vm.$emit("input", option.value)
+                }
+              },
+              model: {
+                value: _vm.radio,
+                callback: function($$v) {
+                  _vm.radio = $$v
+                },
+                expression: "radio"
+              }
+            },
+            [_vm._v(_vm._s(option.label))]
+          )
+        ],
+        1
+      )
+    }),
+    0
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ETextarea.vue?vue&type=template&id=339be3d6&":
 /*!*******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/FormElements/Etextarea.vue?vue&type=template&id=29d08fb6& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/FormElements/ETextarea.vue?vue&type=template&id=339be3d6& ***!
   \*******************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -48101,6 +48273,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/admin/components/FormElements/ECheckbox.vue":
+/*!******************************************************************!*\
+  !*** ./resources/js/admin/components/FormElements/ECheckbox.vue ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ECheckbox_vue_vue_type_template_id_483bdbdf___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ECheckbox.vue?vue&type=template&id=483bdbdf& */ "./resources/js/admin/components/FormElements/ECheckbox.vue?vue&type=template&id=483bdbdf&");
+/* harmony import */ var _ECheckbox_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ECheckbox.vue?vue&type=script&lang=js& */ "./resources/js/admin/components/FormElements/ECheckbox.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ECheckbox_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ECheckbox_vue_vue_type_template_id_483bdbdf___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ECheckbox_vue_vue_type_template_id_483bdbdf___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/admin/components/FormElements/ECheckbox.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/admin/components/FormElements/ECheckbox.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************!*\
+  !*** ./resources/js/admin/components/FormElements/ECheckbox.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ECheckbox_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ECheckbox.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ECheckbox.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ECheckbox_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/admin/components/FormElements/ECheckbox.vue?vue&type=template&id=483bdbdf&":
+/*!*************************************************************************************************!*\
+  !*** ./resources/js/admin/components/FormElements/ECheckbox.vue?vue&type=template&id=483bdbdf& ***!
+  \*************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ECheckbox_vue_vue_type_template_id_483bdbdf___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ECheckbox.vue?vue&type=template&id=483bdbdf& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ECheckbox.vue?vue&type=template&id=483bdbdf&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ECheckbox_vue_vue_type_template_id_483bdbdf___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ECheckbox_vue_vue_type_template_id_483bdbdf___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/admin/components/FormElements/EInput.vue":
 /*!***************************************************************!*\
   !*** ./resources/js/admin/components/FormElements/EInput.vue ***!
@@ -48170,17 +48411,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/admin/components/FormElements/Etextarea.vue":
-/*!******************************************************************!*\
-  !*** ./resources/js/admin/components/FormElements/Etextarea.vue ***!
-  \******************************************************************/
+/***/ "./resources/js/admin/components/FormElements/ERadio.vue":
+/*!***************************************************************!*\
+  !*** ./resources/js/admin/components/FormElements/ERadio.vue ***!
+  \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Etextarea_vue_vue_type_template_id_29d08fb6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Etextarea.vue?vue&type=template&id=29d08fb6& */ "./resources/js/admin/components/FormElements/Etextarea.vue?vue&type=template&id=29d08fb6&");
-/* harmony import */ var _Etextarea_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Etextarea.vue?vue&type=script&lang=js& */ "./resources/js/admin/components/FormElements/Etextarea.vue?vue&type=script&lang=js&");
+/* harmony import */ var _ERadio_vue_vue_type_template_id_9528aee2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ERadio.vue?vue&type=template&id=9528aee2& */ "./resources/js/admin/components/FormElements/ERadio.vue?vue&type=template&id=9528aee2&");
+/* harmony import */ var _ERadio_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ERadio.vue?vue&type=script&lang=js& */ "./resources/js/admin/components/FormElements/ERadio.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -48190,9 +48431,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Etextarea_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Etextarea_vue_vue_type_template_id_29d08fb6___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Etextarea_vue_vue_type_template_id_29d08fb6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _ERadio_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ERadio_vue_vue_type_template_id_9528aee2___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ERadio_vue_vue_type_template_id_9528aee2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -48202,38 +48443,107 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/admin/components/FormElements/Etextarea.vue"
+component.options.__file = "resources/js/admin/components/FormElements/ERadio.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/admin/components/FormElements/Etextarea.vue?vue&type=script&lang=js&":
+/***/ "./resources/js/admin/components/FormElements/ERadio.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************!*\
+  !*** ./resources/js/admin/components/FormElements/ERadio.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ERadio_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ERadio.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ERadio.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ERadio_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/admin/components/FormElements/ERadio.vue?vue&type=template&id=9528aee2&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/js/admin/components/FormElements/ERadio.vue?vue&type=template&id=9528aee2& ***!
+  \**********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ERadio_vue_vue_type_template_id_9528aee2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ERadio.vue?vue&type=template&id=9528aee2& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ERadio.vue?vue&type=template&id=9528aee2&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ERadio_vue_vue_type_template_id_9528aee2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ERadio_vue_vue_type_template_id_9528aee2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/admin/components/FormElements/ETextarea.vue":
+/*!******************************************************************!*\
+  !*** ./resources/js/admin/components/FormElements/ETextarea.vue ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ETextarea_vue_vue_type_template_id_339be3d6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ETextarea.vue?vue&type=template&id=339be3d6& */ "./resources/js/admin/components/FormElements/ETextarea.vue?vue&type=template&id=339be3d6&");
+/* harmony import */ var _ETextarea_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ETextarea.vue?vue&type=script&lang=js& */ "./resources/js/admin/components/FormElements/ETextarea.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ETextarea_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ETextarea_vue_vue_type_template_id_339be3d6___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ETextarea_vue_vue_type_template_id_339be3d6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/admin/components/FormElements/ETextarea.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/admin/components/FormElements/ETextarea.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************************!*\
-  !*** ./resources/js/admin/components/FormElements/Etextarea.vue?vue&type=script&lang=js& ***!
+  !*** ./resources/js/admin/components/FormElements/ETextarea.vue?vue&type=script&lang=js& ***!
   \*******************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Etextarea_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Etextarea.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/Etextarea.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Etextarea_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ETextarea_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ETextarea.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ETextarea.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ETextarea_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/admin/components/FormElements/Etextarea.vue?vue&type=template&id=29d08fb6&":
+/***/ "./resources/js/admin/components/FormElements/ETextarea.vue?vue&type=template&id=339be3d6&":
 /*!*************************************************************************************************!*\
-  !*** ./resources/js/admin/components/FormElements/Etextarea.vue?vue&type=template&id=29d08fb6& ***!
+  !*** ./resources/js/admin/components/FormElements/ETextarea.vue?vue&type=template&id=339be3d6& ***!
   \*************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Etextarea_vue_vue_type_template_id_29d08fb6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Etextarea.vue?vue&type=template&id=29d08fb6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/Etextarea.vue?vue&type=template&id=29d08fb6&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Etextarea_vue_vue_type_template_id_29d08fb6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ETextarea_vue_vue_type_template_id_339be3d6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ETextarea.vue?vue&type=template&id=339be3d6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ETextarea.vue?vue&type=template&id=339be3d6&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ETextarea_vue_vue_type_template_id_339be3d6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Etextarea_vue_vue_type_template_id_29d08fb6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ETextarea_vue_vue_type_template_id_339be3d6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -48471,7 +48781,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! exports provided: 0, 1, 2, 3, 4, 5, 6, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"type\":\"EInput\",\"label\":\"First Name\",\"name\":\"firstname\",\"placeholder\":\"Enter First Name\",\"icon\":\"el-icon-user-solid\",\"isDisabled\":true},{\"type\":\"EInput\",\"label\":\"Last Name\",\"name\":\"lastname\",\"placeholder\":\"Enter Last Name\",\"isClear\":true},{\"type\":\"EInput\",\"label\":\"Email\",\"name\":\"email\",\"placeholder\":\"Enter Email\",\"isClear\":false,\"icon\":\"el-icon-message\",\"isDisabled\":false},{\"type\":\"EInput\",\"label\":\"Password\",\"name\":\"password\",\"placeholder\":\"Enter Password\",\"isClear\":true,\"icon\":\"el-icon-key\",\"isPassword\":true},{\"type\":\"Etextarea\",\"label\":\"Details\",\"name\":\"details\",\"placeholder\":\"Enter your details\"},{\"type\":\"checkbox\",\"label\":\"Do you like Vuejs?\",\"name\":\"likeVue\"},{\"type\":\"RadioButton\",\"label\":\"Best Framework\",\"name\":\"bestframework\",\"params\":{\"options\":[{\"value\":\"1\",\"label\":\"VueJS\"},{\"value\":\"2\",\"label\":\"ReactJS\"},{\"value\":\"3\",\"label\":\"AngularJS\"}]}}]");
+module.exports = JSON.parse("[{\"type\":\"EInput\",\"label\":\"First Name\",\"name\":\"firstname\",\"placeholder\":\"Enter First Name\",\"icon\":\"el-icon-user-solid\",\"isDisabled\":true},{\"type\":\"EInput\",\"label\":\"Last Name\",\"name\":\"lastname\",\"placeholder\":\"Enter Last Name\",\"isClear\":true},{\"type\":\"EInput\",\"label\":\"Email\",\"name\":\"email\",\"placeholder\":\"Enter Email\",\"isClear\":false,\"icon\":\"el-icon-message\",\"isDisabled\":false},{\"type\":\"EInput\",\"label\":\"Password\",\"name\":\"password\",\"placeholder\":\"Enter Password\",\"isClear\":true,\"icon\":\"el-icon-key\",\"isPassword\":true},{\"type\":\"ETextarea\",\"label\":\"Details\",\"name\":\"details\",\"placeholder\":\"Enter your details\"},{\"type\":\"ECheckbox\",\"label\":\"Do you like Vuejs?\",\"name\":\"likeVue\"},{\"type\":\"ERadio\",\"label\":\"Best Framework\",\"name\":\"bestframework\",\"params\":{\"options\":[{\"value\":\"1\",\"label\":\"VueJS\"},{\"value\":\"2\",\"label\":\"ReactJS\"},{\"value\":\"3\",\"label\":\"AngularJS\"}]}}]");
 
 /***/ }),
 

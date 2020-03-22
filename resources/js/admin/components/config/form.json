@@ -33,19 +33,19 @@
         "isPassword": true
     },
     {
-        "type": "Etextarea",
+        "type": "ETextarea",
         "label": "Details",
         "name" :"details",
         "placeholder":"Enter your details"
     },
     
     {
-        "type": "checkbox",
+        "type": "ECheckbox",
         "label": "Do you like Vuejs?",
         "name" :"likeVue"
     },
     {
-        "type": "RadioButton",
+        "type": "ERadio",
         "label": "Best Framework",
         "name" :"bestframework",
         "params": {
