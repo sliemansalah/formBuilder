@@ -9,6 +9,8 @@
           :width="field.width"
           :size="field.size"
           :valid="field.name"
+          :activeColor="field.activeColor"
+          :inActiveColor="field.inActiveColor"
           :isDisabled="field.isDisabled"
           :isPassword="field.isPassword"
           :icon="field.icon"
@@ -37,6 +39,7 @@ import ECheckbox from "../FormElements/ECheckbox";
 import ERadio from "../FormElements/ERadio";
 import EDate from "../FormElements/EDate";
 import ETime from "../FormElements/ETime";
+import ESwitch from "../FormElements/ESwitch";
 
 import Checkbox from "../FormElements/Checkbox";
 import RadioButton from "../FormElements/RadioButton";
@@ -134,6 +137,7 @@ export default {
     ERadio,
     EDate,
     ETime,
+    ESwitch,
     Input,
     Checkbox,
     RadioButton

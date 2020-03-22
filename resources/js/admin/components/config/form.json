@@ -65,6 +65,13 @@
         "name" :"likeVue"
     },
     {
+        "type": "ESwitch",
+        "label": "Do you like AngularJs?",
+        "name" :"likeAngular",
+        "activeColor":"#13ce66",
+        "inActiveColor":"gray"
+    },
+    {
         "type": "ERadio",
         "label": "Best Framework",
         "name" :"bestframework",
