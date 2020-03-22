@@ -5,14 +5,16 @@
         "name" :"firstname",
         "placeholder":"Enter First Name",
         "icon":"el-icon-user-solid",
-        "isDisabled":true
+        "isDisabled":false,
+        "size":"small"
     },
     {
         "type": "EInput",
         "label": "Last Name",
         "name" :"lastname",
         "placeholder":"Enter Last Name",
-        "isClear":true
+        "isClear":true,
+        "size":"small"
     },
     {
         "type": "EInput",
@@ -21,7 +23,8 @@
         "placeholder":"Enter Email",
         "isClear":false,
         "icon":"el-icon-message",
-        "isDisabled":false
+        "isDisabled":false,
+        "size":"small"
     },
     {
         "type": "EInput",
@@ -30,7 +33,24 @@
         "placeholder":"Enter Password",
         "isClear":true,
         "icon":"el-icon-key",
-        "isPassword": true
+        "isPassword": true,
+        "size":"small"
+    },
+    {
+        "type": "EDate",
+        "label": "Date",
+        "name" :"date",
+        "placeholder":"Enter Date",
+        "isClear":true,
+        "icon":"el-icon-date"
+    },
+    {
+        "type": "ETime",
+        "label": "Time",
+        "name" :"time",
+        "placeholder":"Enter Time",
+        "isClear":true,
+        "icon":"el-icon-time"
     },
     {
         "type": "ETextarea",
