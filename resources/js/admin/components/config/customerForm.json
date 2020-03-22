@@ -1,0 +1,60 @@
+[
+    {
+        "type": "EInput",
+        "label": "Name",
+        "name" :"name",
+        "placeholder":"Name",
+        "icon":"el-icon-user-solid",
+        "isDisabled":false,
+        "size":"small"
+    },
+    {
+        "type": "EInputNum",
+        "label": "Age",
+        "name" :"age",
+        "placeholder":"Enter Age",
+        "isClear":true,
+        "size":"small"
+    },
+    {
+        "type": "EInput",
+        "label": "Email",
+        "name" :"email",
+        "placeholder":"Enter Email",
+        "icon":"el-icon-message",
+        "isDisabled":false,
+        "size":"small"
+    },
+    {
+        "type": "ESelect",
+        "label": "Skills",
+        "name" :"skills",
+        "placeholder":"Select Skills",
+        "isClear":true,
+        "isMultiple":true,
+        "size":"small",
+        "params": {
+            "options": [
+                {
+                    "value": "angular",
+                    "label": "angular"
+                },
+                {
+                    "value": "vue",
+                    "label": "vue"
+                },
+                {
+                    "value": "react",
+                    "label": "react"
+                }
+            ]
+        }
+    },
+    {
+        "type": "ESwitch",
+        "label": "Status",
+        "name" :"status",
+        "activeColor":"green",
+        "inActiveColor":"red"
+    }
+]

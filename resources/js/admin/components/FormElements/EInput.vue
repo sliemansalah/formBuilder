@@ -11,7 +11,8 @@
     v-model="model" 
     :placeholder="placeholder" 
     @input="$emit('input',model)"
-    :disabled="isDisabled" />
+    :disabled="isDisabled" 
+   />
   </el-form-item>
   
   </div>

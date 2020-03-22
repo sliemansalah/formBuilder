@@ -166,6 +166,7 @@ export default {
       this.customerID = res.id;
     },
     fillCustomer(res) {
+      
       this.$refs.customerForm.customer.name = res.name;
       this.$refs.customerForm.customer.email = res.email;
       this.$refs.customerForm.customer.age = res.age;
@@ -247,7 +248,7 @@ export default {
       let data = "";
       _.forEach(skills, function(value, key) {
         if (value) {
-          data += key + "/";
+          data += value + "/";
         }
       });
       data = data.substring(0, data.length - 1);

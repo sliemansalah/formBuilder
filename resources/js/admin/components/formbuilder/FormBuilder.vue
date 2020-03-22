@@ -24,9 +24,9 @@
           :data-vv-as="field.label"
         ></component>
       </div>
-      <div>
+      <!-- <div>
         <el-button type="primary" @click="submitForm('ruleForm')">Submit</el-button>
-      </div>
+      </div> -->
     </el-form>
   </div>
 </template>

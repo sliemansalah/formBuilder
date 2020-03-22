@@ -11,60 +11,35 @@
       <div class="modal-dialog modal-sm" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 v-if="customerFormStatus=='add'" class="modal-title" id="exampleModalLabel">New Customer</h5>
+            <h5
+              v-if="customerFormStatus=='add'"
+              class="modal-title"
+              id="exampleModalLabel"
+            >New Customer</h5>
             <h5 v-else class="modal-title" id="exampleModalLabel">Edit Customer</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="name" class="form-control-label">Name:</label>
-                <input v-model="customer.name" type="text" class="form-control" id="name" />
-              </div>
-              <div class="form-group">
-                <label for="age" class="form-control-label">Age:</label>
-                <input v-model="customer.age" type="number" class="form-control" id="age" />
-              </div>
-              <div class="form-group">
-                <label for="email" class="form-control-label">Email:</label>
-                <input v-model="customer.email" type="text" class="form-control" id="email" />
-              </div>
-
-              <div class="form-group">
-                <label for="skills" class="form-control-label">Skills:</label>
-                <div class="m-checkbox-list">
-                  <label class="m-checkbox">
-                    <input v-model="customer.skills.angular" type="checkbox" name="checkboxes" /> AngularJS
-                    <span></span>
-                  </label>
-                  <label class="m-checkbox">
-                    <input v-model="customer.skills.vue" type="checkbox" name="checkboxes" /> VueJS
-                    <span></span>
-                  </label>
-                  <label class="m-checkbox">
-                    <input v-model="customer.skills.react" type="checkbox" name="checkboxes" /> ReactJS
-                    <span></span>
-                  </label>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="skills" class="form-control-label">Enable</label>
-                <div class="m-checkbox-list">
-                  <label class="m-checkbox">
-                    <input v-model="customer.status" type="checkbox" name="status" />
-                    <span></span>
-                  </label>
-                </div>
-              </div>
-            </form>
+            <form-builder :config="formConfig"></form-builder>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button v-if="customerFormStatus=='add'" @click="save" data-dismiss="modal" type="button" class="btn btn-primary">Add</button>
-            <button v-else @click="update" data-dismiss="modal" type="button" class="btn btn-primary">Update</button>
+            <button
+              v-if="customerFormStatus=='add'"
+              @click="save"
+              data-dismiss="modal"
+              type="button"
+              class="btn btn-primary"
+            >Add</button>
+            <button
+              v-else
+              @click="update"
+              data-dismiss="modal"
+              type="button"
+              class="btn btn-primary"
+            >Update</button>
           </div>
         </div>
       </div>
@@ -73,10 +48,12 @@
 </template>
 
 <script>
+import Config from "../../components/config/customerForm.json";
 
 export default {
   props: {
-    customerFormStatus: String
+    customerFormStatus: String,
+    Config,
   },
   data() {
     return {
@@ -89,16 +66,23 @@ export default {
           react: false,
           vue: false
         },
-        status:false,
+        status: false
       }
     };
   },
+  computed: {
+    formConfig() {
+      return Config;
+    }
+  },
   methods: {
     save() {
+      this.customer = this.$children[0].formValues;
       this.$emit("save", this.customer);
       this.clear();
     },
-    update(){
+    update() {
+      this.customer = this.$children[0].formValues;
       this.$emit("update", this.customer);
       this.clear();
     },
@@ -112,7 +96,7 @@ export default {
           react: false,
           vue: false
         },
-        status:false,
+        status: false
       };
     }
   }
@@ -120,8 +104,4 @@ export default {
 </script>
 
 <style>
-/* .modal .modal-content {
-  width: 700px;
-  right: 100px;
-} */
 </style>
