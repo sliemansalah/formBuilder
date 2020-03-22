@@ -6,6 +6,9 @@ import UsersIndex from "../views/users/Index";
 import UsersView from "../views/users/View";
 import UserDetails from "../views/users/Details";
 
+import SlotIndex from "../views/slot/Index";
+import SlotPage from "../views/slot/SlotPage";
+
 import ComponentsIndex from "../views/comps/Index";
 import ComponentsBase from "../views/comps/Base";
 import ComponentsPrime from "../views/comps/Prime";
@@ -41,5 +44,8 @@ export default  [
         { path: '', component: ValidationForm },
         { path: 'validation', component: ValidationForm },
         { path: 'dynamic-form', component: DynamicForm },
+    ] },
+    { path: '/slot', component: SlotIndex, children:[
+        { path: '', component: SlotPage },
     ] },
 ]

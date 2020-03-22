@@ -26,6 +26,9 @@ import UsersIndex from './views/users/Index'
 import ViewUsers from './views/users/View'
 import UserDetails from './views/users/Details'
 
+import SlotIndex from './views/slot/Index'
+import SlotPage from './views/slot/SlotPage'
+import SlotChild from './views/slot/SlotChild'
 
 import MBadge from './components/metronic/base/MBadge.vue'
 import MProgress from './components/metronic/base/MProgress.vue'
@@ -81,6 +84,10 @@ Vue.component('LoginReg', LoginReg)
 Vue.component('UsersIndex', UsersIndex)
 Vue.component('ViewUsers', ViewUsers)
 Vue.component('UserDetails', UserDetails)
+
+Vue.component('SlotIndex', SlotIndex)
+Vue.component('SlotPage', SlotPage)
+Vue.component('SlotChild', SlotChild)
 
 Vue.component('MBadge', MBadge)
 Vue.component('MProgress', MProgress)
