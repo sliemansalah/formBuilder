@@ -34,6 +34,7 @@ import FormsIndex from './views/forms/Index'
 import ValidationForm from './views/forms/ValidationForm'
 import DynamicForm from './views/forms/DynamicForm'
 
+import FormBuilder from './components/formbuilder/FormBuilder.vue'
 
 
 
@@ -87,6 +88,9 @@ Vue.component('MProgress', MProgress)
 Vue.component('FormsIndex', FormsIndex)
 Vue.component('ValidationForm', ValidationForm)
 Vue.component('DynamicForm', DynamicForm)
+
+Vue.component('FormBuilder', FormBuilder)
+
 
 
 /* Prime Component */
