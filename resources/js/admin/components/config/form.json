@@ -4,7 +4,8 @@
         "label": "First Name",
         "name" :"firstname",
         "placeholder":"Enter First Name",
-        "icon":"el-icon-user-solid"
+        "icon":"el-icon-user-solid",
+        "isDisabled":true
     },
     {
         "type": "EInput",
@@ -19,8 +20,25 @@
         "name" :"email",
         "placeholder":"Enter Email",
         "isClear":false,
-        "icon":"el-icon-message"
+        "icon":"el-icon-message",
+        "isDisabled":false
     },
+    {
+        "type": "EInput",
+        "label": "Password",
+        "name" :"password",
+        "placeholder":"Enter Password",
+        "isClear":true,
+        "icon":"el-icon-key",
+        "isPassword": true
+    },
+    {
+        "type": "Etextarea",
+        "label": "Details",
+        "name" :"details",
+        "placeholder":"Enter your details"
+    },
+    
     {
         "type": "checkbox",
         "label": "Do you like Vuejs?",

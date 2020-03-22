@@ -4,6 +4,8 @@
           <label>{{ field.label }}</label>
           <!-- v-bind="field" inside component for bind all values -->
           <component
+          :isDisabled="field.isDisabled"
+          :isPassword="field.isPassword"
           :icon="field.icon"
           :placeholder="field.placeholder"
           :clearable="field.isClear"
@@ -31,6 +33,8 @@
 import Vue from 'vue';
 import Input from '../FormElements/Input';
 import EInput from '../FormElements/EInput';
+import Etextarea from '../FormElements/Etextarea';
+
 import Checkbox from '../FormElements/Checkbox';
 import RadioButton from '../FormElements/RadioButton';
 
@@ -51,6 +55,7 @@ export default {
     },
     components:{
         EInput,
+        Etextarea,
         Input,
         Checkbox,
         RadioButton
