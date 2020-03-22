@@ -16,6 +16,8 @@ import WizardElementUI from "../views/components/custom/WizardElementUI";
 
 import FormsIndex from "../views/forms/Index";
 import ValidationForm from "../views/forms/ValidationForm";
+import DynamicForm from "../views/forms/DynamicForm";
+
 
 export default  [
     { path: '/', component: Dashboard },
@@ -38,5 +40,6 @@ export default  [
     { path: '/forms', component: FormsIndex, children:[
         { path: '', component: ValidationForm },
         { path: 'validation', component: ValidationForm },
+        { path: 'dynamic-form', component: DynamicForm },
     ] },
 ]

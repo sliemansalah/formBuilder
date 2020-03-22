@@ -32,6 +32,8 @@ import MProgress from './components/metronic/base/MProgress.vue'
 
 import FormsIndex from './views/forms/Index'
 import ValidationForm from './views/forms/ValidationForm'
+import DynamicForm from './views/forms/DynamicForm'
+
 
 
 
@@ -84,6 +86,8 @@ Vue.component('MProgress', MProgress)
 
 Vue.component('FormsIndex', FormsIndex)
 Vue.component('ValidationForm', ValidationForm)
+Vue.component('DynamicForm', DynamicForm)
+
 
 /* Prime Component */
 Vue.component('PText', PText);

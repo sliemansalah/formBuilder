@@ -182,6 +182,7 @@
             <div class="m-menu__submenu">
               <span class="m-menu__arrow"></span>
               <ul class="m-menu__subnav">
+
                 <li :class="$route.path=='/forms/validation'? 'm-menu__item m-menu__item--active': 'm-menu__item'"
                  aria-haspopup="true">
                   <router-link to="/forms/validation" class="m-menu__link">
@@ -191,9 +192,23 @@
                     <span class="m-menu__link-text">Validation Form</span>
                   </router-link>
                 </li>
+
+                <li :class="$route.path=='/forms/dynamic-form'? 'm-menu__item m-menu__item--active': 'm-menu__item'"
+                 aria-haspopup="true">
+                  <router-link to="/forms/dynamic-form" class="m-menu__link">
+                    <i class="m-menu__link-bullet m-menu__link-bullet--dot">
+                      <span></span>
+                    </i>
+                    <span class="m-menu__link-text">Dynamic Form</span>
+                  </router-link>
+                </li>
+
               </ul>
             </div>
           </li>
+
+
+        
 
         </ul>
       </div>
