@@ -17,6 +17,14 @@
         "size":"small"
     },
     {
+        "type": "EInputNum",
+        "label": "Age",
+        "name" :"age",
+        "placeholder":"Enter Age",
+        "isClear":true,
+        "size":"small"
+    },
+    {
         "type": "EInput",
         "label": "Email",
         "name" :"email",

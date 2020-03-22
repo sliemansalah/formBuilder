@@ -33,8 +33,9 @@
 
 <script>
 import Vue from "vue";
-import Input from "../FormElements/Input";
+
 import EInput from "../FormElements/EInput";
+import EInputNum from "../FormElements/EInputNum";
 import ETextarea from "../FormElements/ETextarea";
 import ECheckbox from "../FormElements/ECheckbox";
 import ERadio from "../FormElements/ERadio";
@@ -43,6 +44,7 @@ import ETime from "../FormElements/ETime";
 import ESwitch from "../FormElements/ESwitch";
 import ESelect from "../FormElements/ESelect";
 
+import Input from "../FormElements/Input";
 import Checkbox from "../FormElements/Checkbox";
 import RadioButton from "../FormElements/RadioButton";
 
@@ -141,6 +143,7 @@ export default {
   },
   components: {
     EInput,
+    EInputNum,
     ETextarea,
     ECheckbox,
     ERadio,
