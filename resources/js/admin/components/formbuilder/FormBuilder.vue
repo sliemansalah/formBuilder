@@ -2,7 +2,11 @@
   <div>
       <div v-for="(field, key) in config" :key="key">
           <label>{{ field.label }}</label>
+          <!-- v-bind="field" inside component for bind all values -->
           <component
+          :icon="field.icon"
+          :placeholder="field.placeholder"
+          :clearable="field.isClear"
           :is="field.type"
           :name="field.name"
           :params="field.params"
@@ -26,6 +30,7 @@
 <script>
 import Vue from 'vue';
 import Input from '../FormElements/Input';
+import EInput from '../FormElements/EInput';
 import Checkbox from '../FormElements/Checkbox';
 import RadioButton from '../FormElements/RadioButton';
 
@@ -45,6 +50,7 @@ export default {
         }
     },
     components:{
+        EInput,
         Input,
         Checkbox,
         RadioButton

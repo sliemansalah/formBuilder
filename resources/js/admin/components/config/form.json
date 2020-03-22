@@ -1,18 +1,25 @@
 [
     {
-        "type": "Input",
+        "type": "EInput",
         "label": "First Name",
-        "name" :"firstname"
+        "name" :"firstname",
+        "placeholder":"Enter First Name",
+        "icon":"el-icon-user-solid"
     },
     {
-        "type": "Input",
+        "type": "EInput",
         "label": "Last Name",
-        "name" :"lastname"
+        "name" :"lastname",
+        "placeholder":"Enter Last Name",
+        "isClear":true
     },
     {
-        "type": "Input",
+        "type": "EInput",
         "label": "Email",
-        "name" :"email"
+        "name" :"email",
+        "placeholder":"Enter Email",
+        "isClear":false,
+        "icon":"el-icon-message"
     },
     {
         "type": "checkbox",
