@@ -6,13 +6,13 @@ import UsersIndex from "../views/users/Index";
 import UsersView from "../views/users/View";
 import UserDetails from "../views/users/Details";
 
-import ComponentsIndex from "../views/components/Index";
-import ComponentsBase from "../views/components/Base";
-import ComponentsPrime from "../views/components/Prime";
-import ComponentsTabsPrime from "../views/components/custom/TabsPrime";
-import ComponentsTabsElementUI from "../views/components/custom/TabsElementUI";
-import CalanderElementUI from "../views/components/custom/CalanderElementUI";
-import WizardElementUI from "../views/components/custom/WizardElementUI";
+import ComponentsIndex from "../views/comps/Index";
+import ComponentsBase from "../views/comps/Base";
+import ComponentsPrime from "../views/comps/Prime";
+import ComponentsTabsPrime from "../views/comps/custom/TabsPrime";
+import ComponentsTabsElementUI from "../views/comps/custom/TabsElementUI";
+import CalanderElementUI from "../views/comps/custom/CalanderElementUI";
+import WizardElementUI from "../views/comps/custom/WizardElementUI";
 
 import FormsIndex from "../views/forms/Index";
 import ValidationForm from "../views/forms/ValidationForm";
