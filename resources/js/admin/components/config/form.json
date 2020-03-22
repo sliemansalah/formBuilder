@@ -56,6 +56,7 @@
         "type": "ETextarea",
         "label": "Details",
         "name" :"details",
+        "size":"small",
         "placeholder":"Enter your details"
     },
     
@@ -88,6 +89,32 @@
                 {
                     "value": "3",
                     "label": "AngularJS"
+                }
+            ]
+        }
+    },
+
+    {
+        "type": "ESelect",
+        "label": "Best Channels",
+        "name" :"bestchannels",
+        "placeholder":"Select best channels",
+        "isClear":true,
+        "isMultiple":true,
+        "size":"small",
+        "params": {
+            "options": [
+                {
+                    "value": "1",
+                    "label": "Maxiumeliano"
+                },
+                {
+                    "value": "2",
+                    "label": "ElzeroSchool"
+                },
+                {
+                    "value": "3",
+                    "label": "KhaledElsadani"
                 }
             ]
         }

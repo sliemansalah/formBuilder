@@ -2081,6 +2081,55 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ESelect.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/FormElements/ESelect.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ["name", "params", "valid", "placeholder", "clearable", "multiple", "size"],
+  data: function data() {
+    return {
+      selected: ""
+    };
+  },
+  computed: {
+    options: function options() {
+      return this.params.options;
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ESwitch.vue?vue&type=script&lang=js&":
 /*!*************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/FormElements/ESwitch.vue?vue&type=script&lang=js& ***!
@@ -2134,8 +2183,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["placeholder"],
+  props: ["placeholder", "size"],
   data: function data() {
     return {
       model: ""
@@ -2522,8 +2572,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _FormElements_EDate__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../FormElements/EDate */ "./resources/js/admin/components/FormElements/EDate.vue");
 /* harmony import */ var _FormElements_ETime__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../FormElements/ETime */ "./resources/js/admin/components/FormElements/ETime.vue");
 /* harmony import */ var _FormElements_ESwitch__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../FormElements/ESwitch */ "./resources/js/admin/components/FormElements/ESwitch.vue");
-/* harmony import */ var _FormElements_Checkbox__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../FormElements/Checkbox */ "./resources/js/admin/components/FormElements/Checkbox.vue");
-/* harmony import */ var _FormElements_RadioButton__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../FormElements/RadioButton */ "./resources/js/admin/components/FormElements/RadioButton.vue");
+/* harmony import */ var _FormElements_ESelect__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../FormElements/ESelect */ "./resources/js/admin/components/FormElements/ESelect.vue");
+/* harmony import */ var _FormElements_Checkbox__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../FormElements/Checkbox */ "./resources/js/admin/components/FormElements/Checkbox.vue");
+/* harmony import */ var _FormElements_RadioButton__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../FormElements/RadioButton */ "./resources/js/admin/components/FormElements/RadioButton.vue");
 //
 //
 //
@@ -2556,6 +2607,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+
 
 
 
@@ -2622,6 +2675,11 @@ __webpack_require__.r(__webpack_exports__);
           required: true,
           message: "Please select best framework",
           trigger: "blur"
+        }],
+        bestchannels: [{
+          required: true,
+          message: "Please select best channels",
+          trigger: "change"
         }]
       }
     };
@@ -2635,10 +2693,10 @@ __webpack_require__.r(__webpack_exports__);
 
       this.$refs[formName].validate(function (valid) {
         if (valid) {
-          alert('submit!');
+          alert("submit!");
           console.log(_this.formValues);
         } else {
-          console.log('error submit!!');
+          console.log("error submit!!");
           return false;
         }
       });
@@ -2652,9 +2710,10 @@ __webpack_require__.r(__webpack_exports__);
     EDate: _FormElements_EDate__WEBPACK_IMPORTED_MODULE_6__["default"],
     ETime: _FormElements_ETime__WEBPACK_IMPORTED_MODULE_7__["default"],
     ESwitch: _FormElements_ESwitch__WEBPACK_IMPORTED_MODULE_8__["default"],
+    ESelect: _FormElements_ESelect__WEBPACK_IMPORTED_MODULE_9__["default"],
     Input: _FormElements_Input__WEBPACK_IMPORTED_MODULE_1__["default"],
-    Checkbox: _FormElements_Checkbox__WEBPACK_IMPORTED_MODULE_9__["default"],
-    RadioButton: _FormElements_RadioButton__WEBPACK_IMPORTED_MODULE_10__["default"]
+    Checkbox: _FormElements_Checkbox__WEBPACK_IMPORTED_MODULE_10__["default"],
+    RadioButton: _FormElements_RadioButton__WEBPACK_IMPORTED_MODULE_11__["default"]
   },
   created: function created() {
     var _this2 = this;
@@ -30639,6 +30698,74 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ESelect.vue?vue&type=template&id=cfd6bcd0&":
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/FormElements/ESelect.vue?vue&type=template&id=cfd6bcd0& ***!
+  \*****************************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c(
+        "el-form-item",
+        { attrs: { prop: _vm.valid } },
+        [
+          _c(
+            "el-select",
+            {
+              staticStyle: { width: "100%" },
+              attrs: {
+                size: _vm.size,
+                multiple: _vm.multiple,
+                clearable: _vm.clearable,
+                label: _vm.name,
+                placeholder: _vm.placeholder
+              },
+              on: {
+                change: function($event) {
+                  return _vm.$emit("input", _vm.selected)
+                }
+              },
+              model: {
+                value: _vm.selected,
+                callback: function($$v) {
+                  _vm.selected = $$v
+                },
+                expression: "selected"
+              }
+            },
+            _vm._l(_vm.options, function(option, key) {
+              return _c("el-option", {
+                key: key,
+                attrs: { label: option.label, value: option.value }
+              })
+            }),
+            1
+          )
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ESwitch.vue?vue&type=template&id=33d57060&":
 /*!*****************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/admin/components/FormElements/ESwitch.vue?vue&type=template&id=33d57060& ***!
@@ -30712,7 +30839,11 @@ var render = function() {
     "div",
     [
       _c("el-input", {
-        attrs: { type: "textarea", placeholder: _vm.placeholder },
+        attrs: {
+          type: "textarea",
+          size: _vm.size,
+          placeholder: _vm.placeholder
+        },
         on: {
           input: function($event) {
             return _vm.$emit("input", _vm.model)
@@ -31646,6 +31777,7 @@ var render = function() {
                     icon: field.icon,
                     placeholder: field.placeholder,
                     clearable: field.isClear,
+                    multiple: field.isMultiple,
                     name: field.name,
                     params: field.params,
                     "data-vv-as": field.label
@@ -48948,6 +49080,75 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/admin/components/FormElements/ESelect.vue":
+/*!****************************************************************!*\
+  !*** ./resources/js/admin/components/FormElements/ESelect.vue ***!
+  \****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ESelect_vue_vue_type_template_id_cfd6bcd0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ESelect.vue?vue&type=template&id=cfd6bcd0& */ "./resources/js/admin/components/FormElements/ESelect.vue?vue&type=template&id=cfd6bcd0&");
+/* harmony import */ var _ESelect_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ESelect.vue?vue&type=script&lang=js& */ "./resources/js/admin/components/FormElements/ESelect.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ESelect_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ESelect_vue_vue_type_template_id_cfd6bcd0___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ESelect_vue_vue_type_template_id_cfd6bcd0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/admin/components/FormElements/ESelect.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/admin/components/FormElements/ESelect.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/admin/components/FormElements/ESelect.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ESelect_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ESelect.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ESelect.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ESelect_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/admin/components/FormElements/ESelect.vue?vue&type=template&id=cfd6bcd0&":
+/*!***********************************************************************************************!*\
+  !*** ./resources/js/admin/components/FormElements/ESelect.vue?vue&type=template&id=cfd6bcd0& ***!
+  \***********************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ESelect_vue_vue_type_template_id_cfd6bcd0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./ESelect.vue?vue&type=template&id=cfd6bcd0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/admin/components/FormElements/ESelect.vue?vue&type=template&id=cfd6bcd0&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ESelect_vue_vue_type_template_id_cfd6bcd0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ESelect_vue_vue_type_template_id_cfd6bcd0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./resources/js/admin/components/FormElements/ESwitch.vue":
 /*!****************************************************************!*\
   !*** ./resources/js/admin/components/FormElements/ESwitch.vue ***!
@@ -49384,10 +49585,10 @@ __webpack_require__.r(__webpack_exports__);
 /*!********************************************************!*\
   !*** ./resources/js/admin/components/config/form.json ***!
   \********************************************************/
-/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, default */
+/*! exports provided: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, default */
 /***/ (function(module) {
 
-module.exports = JSON.parse("[{\"type\":\"EInput\",\"label\":\"First Name\",\"name\":\"firstname\",\"placeholder\":\"Enter First Name\",\"icon\":\"el-icon-user-solid\",\"isDisabled\":false,\"size\":\"small\"},{\"type\":\"EInput\",\"label\":\"Last Name\",\"name\":\"lastname\",\"placeholder\":\"Enter Last Name\",\"isClear\":true,\"size\":\"small\"},{\"type\":\"EInput\",\"label\":\"Email\",\"name\":\"email\",\"placeholder\":\"Enter Email\",\"isClear\":false,\"icon\":\"el-icon-message\",\"isDisabled\":false,\"size\":\"small\"},{\"type\":\"EInput\",\"label\":\"Password\",\"name\":\"password\",\"placeholder\":\"Enter Password\",\"isClear\":true,\"icon\":\"el-icon-key\",\"isPassword\":true,\"size\":\"small\"},{\"type\":\"EDate\",\"label\":\"Date\",\"name\":\"date\",\"placeholder\":\"Enter Date\",\"isClear\":true,\"icon\":\"el-icon-date\"},{\"type\":\"ETime\",\"label\":\"Time\",\"name\":\"time\",\"placeholder\":\"Enter Time\",\"isClear\":true,\"icon\":\"el-icon-time\"},{\"type\":\"ETextarea\",\"label\":\"Details\",\"name\":\"details\",\"placeholder\":\"Enter your details\"},{\"type\":\"ECheckbox\",\"label\":\"Do you like Vuejs?\",\"name\":\"likeVue\"},{\"type\":\"ESwitch\",\"label\":\"Do you like AngularJs?\",\"name\":\"likeAngular\",\"activeColor\":\"#13ce66\",\"inActiveColor\":\"gray\"},{\"type\":\"ERadio\",\"label\":\"Best Framework\",\"name\":\"bestframework\",\"params\":{\"options\":[{\"value\":\"1\",\"label\":\"VueJS\"},{\"value\":\"2\",\"label\":\"ReactJS\"},{\"value\":\"3\",\"label\":\"AngularJS\"}]}}]");
+module.exports = JSON.parse("[{\"type\":\"EInput\",\"label\":\"First Name\",\"name\":\"firstname\",\"placeholder\":\"Enter First Name\",\"icon\":\"el-icon-user-solid\",\"isDisabled\":false,\"size\":\"small\"},{\"type\":\"EInput\",\"label\":\"Last Name\",\"name\":\"lastname\",\"placeholder\":\"Enter Last Name\",\"isClear\":true,\"size\":\"small\"},{\"type\":\"EInput\",\"label\":\"Email\",\"name\":\"email\",\"placeholder\":\"Enter Email\",\"isClear\":false,\"icon\":\"el-icon-message\",\"isDisabled\":false,\"size\":\"small\"},{\"type\":\"EInput\",\"label\":\"Password\",\"name\":\"password\",\"placeholder\":\"Enter Password\",\"isClear\":true,\"icon\":\"el-icon-key\",\"isPassword\":true,\"size\":\"small\"},{\"type\":\"EDate\",\"label\":\"Date\",\"name\":\"date\",\"placeholder\":\"Enter Date\",\"isClear\":true,\"icon\":\"el-icon-date\"},{\"type\":\"ETime\",\"label\":\"Time\",\"name\":\"time\",\"placeholder\":\"Enter Time\",\"isClear\":true,\"icon\":\"el-icon-time\"},{\"type\":\"ETextarea\",\"label\":\"Details\",\"name\":\"details\",\"size\":\"small\",\"placeholder\":\"Enter your details\"},{\"type\":\"ECheckbox\",\"label\":\"Do you like Vuejs?\",\"name\":\"likeVue\"},{\"type\":\"ESwitch\",\"label\":\"Do you like AngularJs?\",\"name\":\"likeAngular\",\"activeColor\":\"#13ce66\",\"inActiveColor\":\"gray\"},{\"type\":\"ERadio\",\"label\":\"Best Framework\",\"name\":\"bestframework\",\"params\":{\"options\":[{\"value\":\"1\",\"label\":\"VueJS\"},{\"value\":\"2\",\"label\":\"ReactJS\"},{\"value\":\"3\",\"label\":\"AngularJS\"}]}},{\"type\":\"ESelect\",\"label\":\"Best Channels\",\"name\":\"bestchannels\",\"placeholder\":\"Select best channels\",\"isClear\":true,\"isMultiple\":true,\"size\":\"small\",\"params\":{\"options\":[{\"value\":\"1\",\"label\":\"Maxiumeliano\"},{\"value\":\"2\",\"label\":\"ElzeroSchool\"},{\"value\":\"3\",\"label\":\"KhaledElsadani\"}]}}]");
 
 /***/ }),
 

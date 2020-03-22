@@ -2,6 +2,7 @@
   <div>
     <el-input 
     type="textarea"
+    :size="size"
     v-model="model" 
     :placeholder="placeholder" 
     @input="$emit('input',model)"
@@ -11,7 +12,7 @@
 
 <script>
 export default {
-  props: ["placeholder"],
+  props: ["placeholder","size"],
   data() {
     return {
       model: ""

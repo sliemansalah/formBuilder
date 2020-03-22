@@ -16,6 +16,7 @@
           :icon="field.icon"
           :placeholder="field.placeholder"
           :clearable="field.isClear"
+          :multiple="field.isMultiple"
           :is="field.type"
           :name="field.name"
           :params="field.params"
@@ -40,6 +41,7 @@ import ERadio from "../FormElements/ERadio";
 import EDate from "../FormElements/EDate";
 import ETime from "../FormElements/ETime";
 import ESwitch from "../FormElements/ESwitch";
+import ESelect from "../FormElements/ESelect";
 
 import Checkbox from "../FormElements/Checkbox";
 import RadioButton from "../FormElements/RadioButton";
@@ -110,6 +112,13 @@ export default {
             message: "Please select best framework",
             trigger: "blur"
           }
+        ],
+        bestchannels: [
+          {
+            required: true,
+            message: "Please select best channels",
+            trigger: "change"
+          }
         ]
       }
     };
@@ -119,15 +128,15 @@ export default {
       this.formValues[field] = value;
     },
     submitForm(formName) {
-        this.$refs[formName].validate((valid) => {
-          if (valid) {
-            alert('submit!');
-            console.log(this.formValues);
-          } else {
-            console.log('error submit!!');
-            return false;
-          }
-        });
+      this.$refs[formName].validate(valid => {
+        if (valid) {
+          alert("submit!");
+          console.log(this.formValues);
+        } else {
+          console.log("error submit!!");
+          return false;
+        }
+      });
     }
   },
   components: {
@@ -138,6 +147,7 @@ export default {
     EDate,
     ETime,
     ESwitch,
+    ESelect,
     Input,
     Checkbox,
     RadioButton
