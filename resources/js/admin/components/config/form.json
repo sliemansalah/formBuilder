@@ -3,6 +3,7 @@
         "type": "EInput",
         "label": "First Name",
         "name" :"firstname",
+        "valid":"firstname",
         "placeholder":"Enter First Name",
         "icon":"el-icon-user-solid",
         "isDisabled":false,
@@ -12,24 +13,27 @@
         "type": "EInput",
         "label": "Last Name",
         "name" :"lastname",
+        "valid" :"lastname",
         "placeholder":"Enter Last Name",
-        "isClear":true,
+        "clearable":true,
         "size":"small"
     },
     {
         "type": "EInputNum",
         "label": "Age",
         "name" :"age",
+        "valid":"age",
         "placeholder":"Enter Age",
-        "isClear":true,
+        "clearable":true,
         "size":"small"
     },
     {
         "type": "EInput",
         "label": "Email",
         "name" :"email",
+        "valid" :"email",
         "placeholder":"Enter Email",
-        "isClear":false,
+        "clearable":false,
         "icon":"el-icon-message",
         "isDisabled":false,
         "size":"small"
@@ -38,8 +42,9 @@
         "type": "EInput",
         "label": "Password",
         "name" :"password",
+        "valid":"password",
         "placeholder":"Enter Password",
-        "isClear":true,
+        "clearable":true,
         "icon":"el-icon-key",
         "isPassword": true,
         "size":"small"
@@ -48,22 +53,25 @@
         "type": "EDate",
         "label": "Date",
         "name" :"date",
+        "valid":"date",
         "placeholder":"Enter Date",
-        "isClear":true,
+        "clearable":true,
         "icon":"el-icon-date"
     },
     {
         "type": "ETime",
         "label": "Time",
         "name" :"time",
+        "valid":"time",
         "placeholder":"Enter Time",
-        "isClear":true,
+        "clearable":true,
         "icon":"el-icon-time"
     },
     {
         "type": "ETextarea",
         "label": "Details",
         "name" :"details",
+        "valid":"details",
         "size":"small",
         "placeholder":"Enter your details"
     },
@@ -71,12 +79,14 @@
     {
         "type": "ECheckbox",
         "label": "Do you like Vuejs?",
-        "name" :"likeVue"
+        "name" :"likeVue",
+        "valid":"likeVue"
     },
     {
         "type": "ESwitch",
         "label": "Do you like AngularJs?",
         "name" :"likeAngular",
+        "valid":"likeAngular",
         "activeColor":"#13ce66",
         "inActiveColor":"gray"
     },
@@ -84,6 +94,7 @@
         "type": "ERadio",
         "label": "Best Framework",
         "name" :"bestframework",
+        "valid":"bestframework",
         "params": {
             "options": [
                 {
@@ -106,9 +117,10 @@
         "type": "ESelect",
         "label": "Best Channels",
         "name" :"bestchannels",
+        "valid":"bestchannels",
         "placeholder":"Select best channels",
-        "isClear":true,
-        "isMultiple":true,
+        "clearable":true,
+        "multiple":true,
         "search":true,
         "size":"small",
         "params": {
@@ -132,11 +144,19 @@
         "type": "EUpload",
         "label": "Upload file",
         "name" :"upload",
-        "isDrag":true,
-        "isMultiple":true,
+        "drag":true,
+        "multiple":true,
         "autoUpload":false,
         "action":"post action here.."
-        
+    },
+    {
+        "type": "EAddMore",
+        "label": "Add More",
+        "name" :"addmore",
+        "size":"small",
+        "width":"300px",
+        "placeholder":"Enter Name",
+        "placeholder2":"Enter Age"
     }
     
     

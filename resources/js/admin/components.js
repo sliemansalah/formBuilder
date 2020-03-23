@@ -41,6 +41,23 @@ import FormBuilder from './components/formbuilder/FormBuilder.vue'
 
 
 
+
+import EInput from "./components/FormElements/EInput";
+import EInputNum from "./components/FormElements/EInputNum";
+import ETextarea from "./components/FormElements/ETextarea";
+import ECheckbox from "./components/FormElements/ECheckbox";
+import ERadio from "./components/FormElements/ERadio";
+import EDate from "./components/FormElements/EDate";
+import ETime from "./components/FormElements/ETime";
+import ESwitch from "./components/FormElements/ESwitch";
+import ESelect from "./components/FormElements/ESelect";
+import EUpload from "./components/FormElements/EUpload";
+import EAddMore from "./components/FormElements/EAddMore";
+import Input from "./components/FormElements/Input";
+import Checkbox from "./components/FormElements/Checkbox";
+import RadioButton from "./components/FormElements/RadioButton";
+
+
 /* USE NGPRIME  Library*/
 import PText from 'primevue/inputtext';
 import PCheck from 'primevue/checkbox';
@@ -118,6 +135,20 @@ Vue.component('PButton',PButton)
 
 
 
-
+/*  Form Elements */
+Vue.component('EInput',EInput)
+Vue.component('EInputNum',EInputNum)
+Vue.component('ETextarea',ETextarea)
+Vue.component('ECheckbox',ECheckbox)
+Vue.component('ERadio',ERadio)
+Vue.component('EDate',EDate)
+Vue.component('ETime',ETime)
+Vue.component('ESwitch',ESwitch)
+Vue.component('ESelect',ESelect)
+Vue.component('EUpload',EUpload)
+Vue.component('EAddMore',EAddMore)
+Vue.component('Input',Input)
+Vue.component('Checkbox',Checkbox)
+Vue.component('RadioButton',RadioButton)
 
 

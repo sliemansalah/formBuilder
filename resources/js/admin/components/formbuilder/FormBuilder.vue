@@ -1,31 +1,14 @@
 <template>
   <div>
-    <el-form ref="ruleForm" :model="formValues" :rules="rules">
+    <el-form ref="ruleForm" :model="formValues" :rules="runValid?rules:null">
       <div v-for="(field, key) in config" :key="key">
         <label>{{ field.label }}</label>
         <!-- v-bind="field" inside component for bind all values -->
 
         <component
-          :autoUpload="field.autoUpload"
-          :action="field.action"
-          :drag="field.isDrag"
-          :search="field.search"
-          :width="field.width"
-          :size="field.size"
-          :valid="field.name"
-          :activeColor="field.activeColor"
-          :inActiveColor="field.inActiveColor"
-          :isDisabled="field.isDisabled"
-          :isPassword="field.isPassword"
-          :icon="field.icon"
-          :placeholder="field.placeholder"
-          :clearable="field.isClear"
-          :multiple="field.isMultiple"
+           v-bind="field"
           :is="field.type"
-          :name="field.name"
-          :params="field.params"
           @input="updateField(field.name, $event)"
-          :data-vv-as="field.label"
         ></component>
       </div>
       <div>
@@ -38,25 +21,11 @@
 <script>
 import Vue from "vue";
 
-import EInput from "../FormElements/EInput";
-import EInputNum from "../FormElements/EInputNum";
-import ETextarea from "../FormElements/ETextarea";
-import ECheckbox from "../FormElements/ECheckbox";
-import ERadio from "../FormElements/ERadio";
-import EDate from "../FormElements/EDate";
-import ETime from "../FormElements/ETime";
-import ESwitch from "../FormElements/ESwitch";
-import ESelect from "../FormElements/ESelect";
-import EUpload from "../FormElements/EUpload";
-
-import Input from "../FormElements/Input";
-import Checkbox from "../FormElements/Checkbox";
-import RadioButton from "../FormElements/RadioButton";
-
 export default {
   props: ["config"],
   data() {
     return {
+      runValid:false,
       formValues: {},
       rules: {
         firstname: [
@@ -145,21 +114,6 @@ export default {
         }
       });
     }
-  },
-  components: {
-    EInput,
-    EInputNum,
-    ETextarea,
-    ECheckbox,
-    ERadio,
-    EDate,
-    ETime,
-    ESwitch,
-    ESelect,
-    EUpload,
-    Input,
-    Checkbox,
-    RadioButton
   },
   created() {
     this.config.map(f => {
