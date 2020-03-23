@@ -53,6 +53,7 @@ import ESwitch from "./components/FormElements/ESwitch";
 import ESelect from "./components/FormElements/ESelect";
 import EUpload from "./components/FormElements/EUpload";
 import EAddMore from "./components/FormElements/EAddMore";
+
 import Input from "./components/FormElements/Input";
 import Checkbox from "./components/FormElements/Checkbox";
 import RadioButton from "./components/FormElements/RadioButton";
@@ -147,6 +148,7 @@ Vue.component('ESwitch',ESwitch)
 Vue.component('ESelect',ESelect)
 Vue.component('EUpload',EUpload)
 Vue.component('EAddMore',EAddMore)
+
 Vue.component('Input',Input)
 Vue.component('Checkbox',Checkbox)
 Vue.component('RadioButton',RadioButton)

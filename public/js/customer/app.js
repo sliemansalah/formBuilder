@@ -2404,10 +2404,40 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ["limit", "drag", "action", "multiple", "autoUpload"],
   data: function data() {
-    return {};
+    return {
+      dialogImageUrl: '',
+      dialogVisible: false,
+      fileList: []
+    };
   },
   methods: {
     handleRemove: function handleRemove(file, fileList) {
@@ -2421,6 +2451,10 @@ __webpack_require__.r(__webpack_exports__);
     },
     beforeRemove: function beforeRemove(file, fileList) {
       return this.$confirm("Cancel the transfert of ".concat(file.name, " ?"));
+    },
+    handlePictureCardPreview: function handlePictureCardPreview(file) {
+      this.dialogImageUrl = file.url;
+      this.dialogVisible = true;
     }
   }
 });
@@ -31394,15 +31428,17 @@ var render = function() {
         "el-upload",
         {
           attrs: {
+            action: _vm.action,
+            "list-type": "picture-card",
+            "on-preview": _vm.handlePictureCardPreview,
+            "on-remove": _vm.handleRemove,
+            "auto-upload": _vm.autoUpload,
             drag: _vm.drag,
             multiple: _vm.multiple,
-            action: _vm.action,
-            "on-preview": _vm.handlePreview,
-            "on-remove": _vm.handleRemove,
             "before-remove": _vm.beforeRemove,
             limit: _vm.limit,
             "on-exceed": _vm.handleExceed,
-            "auto-upload": _vm.autoUpload
+            "file-list": _vm.fileList
           }
         },
         [
@@ -31422,7 +31458,25 @@ var render = function() {
         1
       ),
       _vm._v(" "),
+      _c(
+        "el-dialog",
+        {
+          attrs: { visible: _vm.dialogVisible },
+          on: {
+            "update:visible": function($event) {
+              _vm.dialogVisible = $event
+            }
+          }
+        },
+        [
+          _c("img", {
+            attrs: { width: "100%", src: _vm.dialogImageUrl, alt: "" }
+          })
+        ]
+      ),
+      _vm._v(" "),
       _c("br"),
+      _vm._v(" "),
       _c("br")
     ],
     1
