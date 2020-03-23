@@ -3,6 +3,7 @@
     <el-form-item :prop="valid">
       <el-select
         style="width:100%;"
+        :filterable="search"
         :size="size"
         :multiple="multiple"
         v-model="selected"
@@ -24,7 +25,7 @@
 
 <script>
 export default {
-  props: ["name", "params", "valid", "placeholder","clearable","multiple","size"],
+  props: ["name", "params", "valid", "placeholder","clearable","multiple","size","search"],
   data() {
     return {
       selected: ""

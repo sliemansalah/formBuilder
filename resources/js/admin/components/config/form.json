@@ -109,6 +109,7 @@
         "placeholder":"Select best channels",
         "isClear":true,
         "isMultiple":true,
+        "search":true,
         "size":"small",
         "params": {
             "options": [
@@ -126,6 +127,16 @@
                 }
             ]
         }
+    },
+    {
+        "type": "EUpload",
+        "label": "Upload file",
+        "name" :"upload",
+        "isDrag":true,
+        "isMultiple":true,
+        "autoUpload":false,
+        "action":"post action here.."
+        
     }
     
     

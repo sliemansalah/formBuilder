@@ -6,6 +6,10 @@
         <!-- v-bind="field" inside component for bind all values -->
 
         <component
+          :autoUpload="field.autoUpload"
+          :action="field.action"
+          :drag="field.isDrag"
+          :search="field.search"
           :width="field.width"
           :size="field.size"
           :valid="field.name"
@@ -24,9 +28,9 @@
           :data-vv-as="field.label"
         ></component>
       </div>
-      <!-- <div>
+      <div>
         <el-button type="primary" @click="submitForm('ruleForm')">Submit</el-button>
-      </div> -->
+      </div>
     </el-form>
   </div>
 </template>
@@ -43,6 +47,7 @@ import EDate from "../FormElements/EDate";
 import ETime from "../FormElements/ETime";
 import ESwitch from "../FormElements/ESwitch";
 import ESelect from "../FormElements/ESelect";
+import EUpload from "../FormElements/EUpload";
 
 import Input from "../FormElements/Input";
 import Checkbox from "../FormElements/Checkbox";
@@ -151,6 +156,7 @@ export default {
     ETime,
     ESwitch,
     ESelect,
+    EUpload,
     Input,
     Checkbox,
     RadioButton
